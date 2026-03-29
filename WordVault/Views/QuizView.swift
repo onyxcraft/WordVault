@@ -90,7 +90,7 @@ struct QuizView: View {
     private var progressBar: some View {
         VStack(spacing: 8) {
             ProgressView(value: progress)
-                .tint(.accentColor)
+                .tint(Color.accentColor)
 
             HStack {
                 Text("Question \(currentIndex + 1) / \(shuffledWords.count)")
@@ -378,7 +378,7 @@ struct ChoiceButton: View {
                         .foregroundStyle(isCorrect ? .green : (isSelected ? .red : .gray))
                 } else if isSelected {
                     Image(systemName: "checkmark.circle.fill")
-                        .foregroundStyle(.accentColor)
+                        .foregroundStyle(Color.accentColor)
                 }
             }
             .padding()
