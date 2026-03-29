@@ -3,662 +3,242 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		1A000001000000000000001 /* WordVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000002000000000000001 /* WordVaultApp.swift */; };
-		1A000003000000000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000004000000000000001 /* ContentView.swift */; };
-		1A000005000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A000006000000000000001 /* Assets.xcassets */; };
-		1A000007000000000000001 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000008000000000000001 /* Word.swift */; };
-		1A000009000000000000001 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000A000000000000001 /* Deck.swift */; };
-		1A00000B000000000000001 /* ReviewSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000C000000000000001 /* ReviewSession.swift */; };
-		1B000001000000000000001 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000008000000000000001 /* Word.swift */; };
-		1B000002000000000000001 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000A000000000000001 /* Deck.swift */; };
-		1B000003000000000000001 /* ReviewSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000C000000000000001 /* ReviewSession.swift */; };
-
-		1A00000D000000000000001 /* SpacedRepetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000E000000000000001 /* SpacedRepetition.swift */; };
-		1A00000F000000000000001 /* DeckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000010000000000000001 /* DeckViewModel.swift */; };
-		1A000011000000000000001 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000012000000000000001 /* WordViewModel.swift */; };
-		1A000013000000000000001 /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000014000000000000001 /* ReviewViewModel.swift */; };
-		1A000015000000000000001 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000016000000000000001 /* HomeView.swift */; };
-		1A000017000000000000001 /* DeckListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000018000000000000001 /* DeckListView.swift */; };
-		1A000019000000000000001 /* WordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001A000000000000001 /* WordListView.swift */; };
-		1A00001B000000000000001 /* AddEditWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001C000000000000001 /* AddEditWordView.swift */; };
-		1A00001D000000000000001 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001E000000000000001 /* FlashcardView.swift */; };
-		1A00001F000000000000001 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000020000000000000001 /* QuizView.swift */; };
-		1A000021000000000000001 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000022000000000000001 /* ProgressView.swift */; };
-		1A000023000000000000001 /* CSVImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000024000000000000001 /* CSVImporter.swift */; };
-		1A000025000000000000001 /* DeckExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000026000000000000001 /* DeckExporter.swift */; };
-		1A000027000000000000001 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000028000000000000001 /* NotificationManager.swift */; };
-		1A000029000000000000001 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00002A000000000000001 /* SearchView.swift */; };
-		1A00002B000000000000001 /* AddEditDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00002C000000000000001 /* AddEditDeckView.swift */; };
-		1A00002D000000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00002E000000000000001 /* SettingsView.swift */; };
-		1A00002F000000000000001 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A000030000000000000001 /* WidgetKit.framework */; };
-		1A000031000000000000001 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A000032000000000000001 /* SwiftUI.framework */; };
-		1A000033000000000000001 /* WordVaultWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000034000000000000001 /* WordVaultWidget.swift */; };
-		1A000035000000000000001 /* WordVaultWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000036000000000000001 /* WordVaultWidgetBundle.swift */; };
-		1A000037000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A000038000000000000001 /* Assets.xcassets */; };
-		1A000039000000000000001 /* WordVaultWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1A00003A000000000000001 /* WordVaultWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1A00003B000000000000001 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1A00003C000000000000001 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A00003D000000000000001;
-			remoteInfo = WordVaultWidgetExtension;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1A00003E000000000000001 /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				1A000039000000000000001 /* WordVaultWidgetExtension.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		1A00003F000000000000001 /* WordVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A000002000000000000001 /* WordVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordVaultApp.swift; sourceTree = "<group>"; };
-		1A000004000000000000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1A000006000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A000008000000000000001 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
-		1A00000A000000000000001 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
-		1A00000C000000000000001 /* ReviewSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSession.swift; sourceTree = "<group>"; };
-		1A00000E000000000000001 /* SpacedRepetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacedRepetition.swift; sourceTree = "<group>"; };
-		1A000010000000000000001 /* DeckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckViewModel.swift; sourceTree = "<group>"; };
-		1A000012000000000000001 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
-		1A000014000000000000001 /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
-		1A000016000000000000001 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		1A000018000000000000001 /* DeckListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListView.swift; sourceTree = "<group>"; };
-		1A00001A000000000000001 /* WordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListView.swift; sourceTree = "<group>"; };
-		1A00001C000000000000001 /* AddEditWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditWordView.swift; sourceTree = "<group>"; };
-		1A00001E000000000000001 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
-		1A000020000000000000001 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
-		1A000022000000000000001 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
-		1A000024000000000000001 /* CSVImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVImporter.swift; sourceTree = "<group>"; };
-		1A000026000000000000001 /* DeckExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckExporter.swift; sourceTree = "<group>"; };
-		1A000028000000000000001 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		1A00002A000000000000001 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		1A00002C000000000000001 /* AddEditDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditDeckView.swift; sourceTree = "<group>"; };
-		1A00002E000000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		1A000030000000000000001 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
-		1A000032000000000000001 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		1A000034000000000000001 /* WordVaultWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordVaultWidget.swift; sourceTree = "<group>"; };
-		1A000036000000000000001 /* WordVaultWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordVaultWidgetBundle.swift; sourceTree = "<group>"; };
-		1A000038000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A00003A000000000000001 /* WordVaultWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WordVaultWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A000040000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A000041000000000000001 /* WordVaultWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WordVaultWidgetExtension.entitlements; sourceTree = "<group>"; };
-		1A000042000000000000001 /* WordVault.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WordVault.entitlements; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		1A000043000000000000001 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A000044000000000000001 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A00002F000000000000001 /* WidgetKit.framework in Frameworks */,
-				1A000031000000000000001 /* SwiftUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		1A000045000000000000001 = {
-			isa = PBXGroup;
-			children = (
-				1A000046000000000000001 /* WordVault */,
-				1A000047000000000000001 /* WordVaultWidget */,
-				1A000048000000000000001 /* Frameworks */,
-				1A000049000000000000001 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		1A000046000000000000001 /* WordVault */ = {
-			isa = PBXGroup;
-			children = (
-				1A000042000000000000001 /* WordVault.entitlements */,
-				1A000002000000000000001 /* WordVaultApp.swift */,
-				1A000004000000000000001 /* ContentView.swift */,
-				1A00004A000000000000001 /* Models */,
-				1A00004B000000000000001 /* ViewModels */,
-				1A00004C000000000000001 /* Views */,
-				1A00004D000000000000001 /* Services */,
-				1A000006000000000000001 /* Assets.xcassets */,
-			);
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D8C343642A2C4F25A6D2A258 /* WordVault */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
 			path = WordVault;
 			sourceTree = "<group>";
 		};
-		1A000047000000000000001 /* WordVaultWidget */ = {
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFileReference section */
+		934B157792314649A2D89063 /* WordVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WordVault.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		67642375F4A242DABA42DC9E = {
 			isa = PBXGroup;
 			children = (
-				1A000041000000000000001 /* WordVaultWidgetExtension.entitlements */,
-				1A000036000000000000001 /* WordVaultWidgetBundle.swift */,
-				1A000034000000000000001 /* WordVaultWidget.swift */,
-				1A000038000000000000001 /* Assets.xcassets */,
-				1A000040000000000000001 /* Info.plist */,
+				D8C343642A2C4F25A6D2A258 /* WordVault */,
+				4567B48440B241BE99ABCEB0 /* Products */,
 			);
-			path = WordVaultWidget;
 			sourceTree = "<group>";
 		};
-		1A000048000000000000001 /* Frameworks */ = {
+		4567B48440B241BE99ABCEB0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A000030000000000000001 /* WidgetKit.framework */,
-				1A000032000000000000001 /* SwiftUI.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1A000049000000000000001 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1A00003F000000000000001 /* WordVault.app */,
-				1A00003A000000000000001 /* WordVaultWidgetExtension.appex */,
+				934B157792314649A2D89063 /* WordVault.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1A00004A000000000000001 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				1A000008000000000000001 /* Word.swift */,
-				1A00000A000000000000001 /* Deck.swift */,
-				1A00000C000000000000001 /* ReviewSession.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		1A00004B000000000000001 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				1A000010000000000000001 /* DeckViewModel.swift */,
-				1A000012000000000000001 /* WordViewModel.swift */,
-				1A000014000000000000001 /* ReviewViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		1A00004C000000000000001 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				1A000016000000000000001 /* HomeView.swift */,
-				1A000018000000000000001 /* DeckListView.swift */,
-				1A00002C000000000000001 /* AddEditDeckView.swift */,
-				1A00001A000000000000001 /* WordListView.swift */,
-				1A00001C000000000000001 /* AddEditWordView.swift */,
-				1A00001E000000000000001 /* FlashcardView.swift */,
-				1A000020000000000000001 /* QuizView.swift */,
-				1A000022000000000000001 /* ProgressView.swift */,
-				1A00002A000000000000001 /* SearchView.swift */,
-				1A00002E000000000000001 /* SettingsView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		1A00004D000000000000001 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				1A00000E000000000000001 /* SpacedRepetition.swift */,
-				1A000024000000000000001 /* CSVImporter.swift */,
-				1A000026000000000000001 /* DeckExporter.swift */,
-				1A000028000000000000001 /* NotificationManager.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A00004E000000000000001 /* WordVault */ = {
+		F42B95E495B44ED4AF55CF1E /* WordVault */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A00004F000000000000001 /* Build configuration list for PBXNativeTarget "WordVault" */;
+			buildConfigurationList = 686A59DDE4C849A7B2ACEA1E /* Build configuration list for PBXNativeTarget "WordVault" */;
 			buildPhases = (
-				1A000050000000000000001 /* Sources */,
-				1A000043000000000000001 /* Frameworks */,
-				1A000051000000000000001 /* Resources */,
-				1A00003E000000000000001 /* Embed Foundation Extensions */,
+				9BC087D400A64D0CA3A3A734 /* Sources */,
+				07D18F30F2F54E61A54763B4 /* Frameworks */,
+				8DCAC451321C46C7BD0A091B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1A000052000000000000001 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D8C343642A2C4F25A6D2A258 /* WordVault */,
 			);
 			name = WordVault;
+			packageProductDependencies = (
+			);
 			productName = WordVault;
-			productReference = 1A00003F000000000000001 /* WordVault.app */;
+			productReference = 934B157792314649A2D89063 /* WordVault.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1A00003D000000000000001 /* WordVaultWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A000053000000000000001 /* Build configuration list for PBXNativeTarget "WordVaultWidgetExtension" */;
-			buildPhases = (
-				1A000054000000000000001 /* Sources */,
-				1A000044000000000000001 /* Frameworks */,
-				1A000055000000000000001 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WordVaultWidgetExtension;
-			productName = WordVaultWidgetExtension;
-			productReference = 1A00003A000000000000001 /* WordVaultWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1A00003C000000000000001 /* Project object */ = {
+		13537C31A9A642178555C43E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
-				TargetAttributes = {
-					1A00004E000000000000001 = {
-						CreatedOnToolsVersion = 15.0;
-					};
-					1A00003D000000000000001 = {
-						CreatedOnToolsVersion = 15.0;
-					};
-				};
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
 			};
-			buildConfigurationList = 1A000056000000000000001 /* Build configuration list for PBXProject "WordVault" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = CFE90AAFFC4141B9BB65C4BC /* Build configuration list for PBXProject "WordVault" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 1A000045000000000000001;
-			productRefGroup = 1A000049000000000000001 /* Products */;
+			mainGroup = 67642375F4A242DABA42DC9E;
+			minimizedProjectReferenceProxies = 1;
+			productRefGroup = 4567B48440B241BE99ABCEB0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A00004E000000000000001 /* WordVault */,
-				1A00003D000000000000001 /* WordVaultWidgetExtension */,
+				F42B95E495B44ED4AF55CF1E /* WordVault */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1A000051000000000000001 /* Resources */ = {
+		8DCAC451321C46C7BD0A091B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A000005000000000000001 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A000055000000000000001 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A000037000000000000001 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1A000050000000000000001 /* Sources */ = {
+		9BC087D400A64D0CA3A3A734 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A000001000000000000001 /* WordVaultApp.swift in Sources */,
-				1A000003000000000000001 /* ContentView.swift in Sources */,
-				1A000007000000000000001 /* Word.swift in Sources */,
-				1A000009000000000000001 /* Deck.swift in Sources */,
-				1A00000B000000000000001 /* ReviewSession.swift in Sources */,
-				1A00000D000000000000001 /* SpacedRepetition.swift in Sources */,
-				1A00000F000000000000001 /* DeckViewModel.swift in Sources */,
-				1A000011000000000000001 /* WordViewModel.swift in Sources */,
-				1A000013000000000000001 /* ReviewViewModel.swift in Sources */,
-				1A000015000000000000001 /* HomeView.swift in Sources */,
-				1A000017000000000000001 /* DeckListView.swift in Sources */,
-				1A000019000000000000001 /* WordListView.swift in Sources */,
-				1A00001B000000000000001 /* AddEditWordView.swift in Sources */,
-				1A00001D000000000000001 /* FlashcardView.swift in Sources */,
-				1A00001F000000000000001 /* QuizView.swift in Sources */,
-				1A000021000000000000001 /* ProgressView.swift in Sources */,
-				1A000023000000000000001 /* CSVImporter.swift in Sources */,
-				1A000025000000000000001 /* DeckExporter.swift in Sources */,
-				1A000027000000000000001 /* NotificationManager.swift in Sources */,
-				1A000029000000000000001 /* SearchView.swift in Sources */,
-				1A00002B000000000000001 /* AddEditDeckView.swift in Sources */,
-				1A00002D000000000000001 /* SettingsView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A000054000000000000001 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A000033000000000000001 /* WordVaultWidget.swift in Sources */,
-				1A000035000000000000001 /* WordVaultWidgetBundle.swift in Sources */,
-				1B000001000000000000001 /* Word.swift in Sources */,
-				1B000002000000000000001 /* Deck.swift in Sources */,
-				1B000003000000000000001 /* ReviewSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		1A000052000000000000001 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A00003D000000000000001 /* WordVaultWidgetExtension */;
-			targetProxy = 1A00003B000000000000001 /* PBXContainerItemProxy */;
+/* Begin PBXFrameworksBuildPhase section */
+		07D18F30F2F54E61A54763B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXTargetDependency section */
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1A000057000000000000001 /* Debug */ = {
+		495903C0C2C34CF18C269ED4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 			};
 			name = Debug;
 		};
-		1A000058000000000000001 /* Release */ = {
+		49CDFE7CA761413FB86B61D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 			};
 			name = Release;
 		};
-		1A000059000000000000001 /* Debug */ = {
+		CEFBB8F22A2B43AF9A56AC57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WordVault/WordVault.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WordVault;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lopodragon.wordvault;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1A00005A000000000000001 /* Release */ = {
+		6368B8E60AB8433CA8A5061F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WordVault/WordVault.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WordVault;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lopodragon.wordvault;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		1A00005B000000000000001 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = WordVaultWidget/WordVaultWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WordVaultWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WordVaultWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lopodragon.wordvault.widget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1A00005C000000000000001 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = WordVaultWidget/WordVaultWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WordVaultWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WordVaultWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lopodragon.wordvault.widget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A00004F000000000000001 /* Build configuration list for PBXNativeTarget "WordVault" */ = {
+		CFE90AAFFC4141B9BB65C4BC /* Build configuration list for PBXProject "WordVault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A000059000000000000001 /* Debug */,
-				1A00005A000000000000001 /* Release */,
+				495903C0C2C34CF18C269ED4 /* Debug */,
+				49CDFE7CA761413FB86B61D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A000053000000000000001 /* Build configuration list for PBXNativeTarget "WordVaultWidgetExtension" */ = {
+		686A59DDE4C849A7B2ACEA1E /* Build configuration list for PBXNativeTarget "WordVault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A00005B000000000000001 /* Debug */,
-				1A00005C000000000000001 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A000056000000000000001 /* Build configuration list for PBXProject "WordVault" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A000057000000000000001 /* Debug */,
-				1A000058000000000000001 /* Release */,
+				CEFBB8F22A2B43AF9A56AC57 /* Debug */,
+				6368B8E60AB8433CA8A5061F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
 	};
-	rootObject = 1A00003C000000000000001 /* Project object */;
+	rootObject = 13537C31A9A642178555C43E /* Project object */;
 }
+

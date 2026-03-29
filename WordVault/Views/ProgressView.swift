@@ -2,7 +2,7 @@ import SwiftUI
 import SwiftData
 import Charts
 
-struct ProgressView: View {
+struct WordProgressView: View {
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \ReviewSession.date, order: .reverse) private var sessions: [ReviewSession]
     @Query private var words: [Word]
@@ -286,6 +286,6 @@ struct EmptySessionsView: View {
 }
 
 #Preview {
-    ProgressView()
+    WordProgressView()
         .modelContainer(for: [Word.self, Deck.self, ReviewSession.self], inMemory: true)
 }
