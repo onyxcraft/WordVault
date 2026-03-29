@@ -66,7 +66,7 @@ struct FlashcardView: View {
     private var progressBar: some View {
         VStack(spacing: 8) {
             ProgressView(value: progress)
-                .tint(.accentColor)
+                .tint(Color.accentColor)
 
             HStack {
                 Text("\(reviewedCount) / \(shuffledWords.count)")
