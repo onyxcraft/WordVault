@@ -2,6 +2,21 @@ import WidgetKit
 import SwiftUI
 import SwiftData
 
+// Local helper to avoid depending on main app target's SpacedRepetition
+private enum SpacedRepetition {
+    static func getMasteryLabel(_ level: Int) -> String {
+        switch level {
+        case 0: return "New"
+        case 1: return "Learning"
+        case 2: return "Familiar"
+        case 3: return "Comfortable"
+        case 4: return "Proficient"
+        case 5: return "Mastered"
+        default: return "Unknown"
+        }
+    }
+}
+
 struct Provider: TimelineProvider {
     let modelContainer: ModelContainer
 
@@ -66,6 +81,7 @@ struct Provider: TimelineProvider {
         completion(timeline)
     }
 
+    @MainActor
     private func getWordOfTheDay() -> Word? {
         let context = modelContainer.mainContext
         let descriptor = FetchDescriptor<Word>()
