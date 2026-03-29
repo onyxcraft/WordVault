@@ -66,7 +66,7 @@ struct Provider: TimelineProvider {
         completion(timeline)
     }
 
-    private func getWordOfTheDay() -> Word? {
+    @MainActor private func getWordOfTheDay() -> Word? {
         let context = modelContainer.mainContext
         let descriptor = FetchDescriptor<Word>()
 
