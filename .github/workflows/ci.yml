@@ -13,13 +13,15 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Select Xcode
-        run: sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
+        run: |
+          XCODE_PATH=$(ls -d /Applications/Xcode*.app 2>/dev/null | sort -V | tail -1)
+          sudo xcode-select -s "$XCODE_PATH/Contents/Developer"
+          xcodebuild -version
       
       - name: Build
         run: |
-          SCHEME=$(xcodebuild -list 2>/dev/null | grep -A 20 "Schemes:" | grep -v "Schemes:" | grep -v "^$" | head -1 | xargs)
-          echo "Building scheme: $SCHEME"
-          xcodebuild -scheme "$SCHEME" \
+          xcodebuild -project WordVault.xcodeproj \
+            -scheme WordVault \
             -destination 'generic/platform=iOS' \
             -skipPackagePluginValidation \
             -skipMacroValidation \
