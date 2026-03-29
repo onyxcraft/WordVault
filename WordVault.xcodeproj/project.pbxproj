@@ -16,7 +16,7 @@
 		1B000001000000000000001 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000008000000000000001 /* Word.swift */; };
 		1B000002000000000000001 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000A000000000000001 /* Deck.swift */; };
 		1B000003000000000000001 /* ReviewSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000C000000000000001 /* ReviewSession.swift */; };
-		1B000004000000000000001 /* SpacedRepetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000E000000000000001 /* SpacedRepetition.swift */; };
+
 		1A00000D000000000000001 /* SpacedRepetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00000E000000000000001 /* SpacedRepetition.swift */; };
 		1A00000F000000000000001 /* DeckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000010000000000000001 /* DeckViewModel.swift */; };
 		1A000011000000000000001 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000012000000000000001 /* WordViewModel.swift */; };
@@ -359,7 +359,6 @@
 				1B000001000000000000001 /* Word.swift in Sources */,
 				1B000002000000000000001 /* Deck.swift in Sources */,
 				1B000003000000000000001 /* ReviewSession.swift in Sources */,
-				1B000004000000000000001 /* SpacedRepetition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
