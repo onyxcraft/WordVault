@@ -20,7 +20,7 @@ jobs:
           SCHEME=$(xcodebuild -list 2>/dev/null | grep -A 20 "Schemes:" | grep -v "Schemes:" | grep -v "^$" | head -1 | xargs)
           echo "Building scheme: $SCHEME"
           xcodebuild -scheme "$SCHEME" \
-            -destination 'generic/platform=iOS Simulator' \
+            -destination 'generic/platform=iOS' \
             -skipPackagePluginValidation \
             -skipMacroValidation \
             CODE_SIGNING_ALLOWED=NO \
